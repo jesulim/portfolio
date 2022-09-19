@@ -1,0 +1,33 @@
+---
+const {
+	dark = true,
+	title = 'Ivan Martinez - Webpage',
+	description = 'Ivan Martinez, Desarrollador Web orientado al Front-end',
+} = Astro.props
+---
+
+<html lang="es" class:list={[{ 'bg-[#f0e040]': dark}, 'scroll-smooth']}>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{title}</title>
+		<meta name="description" content={description}>
+		<meta name="theme-color" content="#f0e040">
+		<link rel='icon' href='/favicon.svg' type='image/svg+xml' />
+
+		<meta property='og:url' content='https://miduconf.com' />
+		<meta property='og:type' content='website' />
+		<meta property='og:title' content={title} />
+		<meta property='og:description' content={description} />
+
+		<meta name='twitter:card' content='summary_large_image' />
+		<meta name='twitter:site' content='@JeSuLiM2' />
+		<meta name='twitter:creator' content='@JeSuLiM2' />
+		<meta name='twitter:title' content={title} />
+		<meta name='twitter:description' content={description} />
+	</head>
+
+	<body>
+		<slot />
+	</body>
+</html>

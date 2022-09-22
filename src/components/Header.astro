@@ -1,36 +1,24 @@
-<div
-  class="flex flex-col gap-y-3 sm:flex-row sm:items-center sm:justify-between"
->
-  <a href="/">
-    <div
-      class="flex items-center bg-clip-text text-xl font-bold"
-    >
-      Ivan Martinez
-    </div>
+---
+import Favicon from "../../public/favicon.svg";
+---
+
+<div class="flex flex-col sm:flex-row sm:justify-between">
+  <a href="/" class="flex items-center font-bold">
+    <img src={Favicon} class="w-8 mr-2" />
+    Ivan Martinez
   </a>
-  <nav>
-    <ul class="flex gap-x-3 font-medium">
-      <li class="hover:text-[#f45b69]">
-        <a href="/demo/astro-boilerplate/posts">Blogs</a>
-      </li><li class="hover:text-[#f45b69]">
-        <a href="/demo/astro-boilerplate">GitHub</a>
-      </li><li class="hover:text-[#f45b69]">
-        <a href="/demo/astro-boilerplate">Twitter</a>
-      </li>
+  <div class="flex items-center font-medium mt-4">
+    <ul class="flex gap-4">
+      <a href="">
+        <li>Blog</li>
+      </a>
+      <a href="">
+        <li>GitHUb</li>
+      </a>
+      <a href="">
+        <li>Twitter</li>
+      </a>
     </ul>
-  </nav>
+  </div>
 </div>
-<!-- <div>
-  <a href="/">
-    <div>
-      Ivan Martinez
-    </div>
-    <nav>
-      <ul>
-        <li><a href="">Blogs</a></li>
-        <li><a href="">Github</a></li>
-        <li><a href="">Twitter</a></li>
-      </ul>
-    </nav>
-  </a>
-</div> -->
+

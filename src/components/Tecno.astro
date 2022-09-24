@@ -2,12 +2,12 @@
 const {title} = Astro.props
 ---
 
-<a href="" class="text-white pr-5">
+<a href="" class="text-white px-3">
   <div class="flex flex-col items-center">
-    <div class="w-8 h-8 mb-1">
+    <div class="w-8 h-8">
       <slot />
     </div>
-    <div>
+    <div class="pt-1">
       {title}
     </div>
   </div>

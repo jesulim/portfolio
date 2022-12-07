@@ -1,17 +1,23 @@
-<div class="sm:flex gap-x-12 mt-24">
-  <div>
-    <h1 class="mb-4 text-2xl">Hola, me llamo Ivan 👋🏼</h1>
-    <p class="pb-8">
-      Soy un Desarrollador Web Front-end, mi pasion es aprender todo lo que tenga
-      que ver con las tecnologias web. Siempre estoy buscando y aprendiendo nuevas
-      formas de mejorar mi experiencia como programador.
-    </p>
+---
+import Tecnologies from "./Tecnologies.astro";
+import YellowBackground from "./YellowBackground.astro";
+---
+
+<YellowBackground>
+  <Tecnologies />
+  <div class="sm:flex gap-x-12 mt-24">
+    <div>
+      <h1 class="mb-4 text-2xl">Hola, me llamo Ivan 👋🏼</h1>
+      <p class="pb-8">
+        Soy un Desarrollador Web Front-end con una pasión por las tecnologías web. Me esfuerzo por estar al día con las últimas tendencias y técnicas en el campo de la programación web, y utilizo estos conocimientos para crear sitios web impresionantes. Me encanta experimentar y seguir mejorando en mi carrera como programador. Estoy emocionado de ver cómo evolucionará mi trabajo en el futuro en el emocionante mundo de la programación web.
+      </p>
+    </div>
+    <div class="flex justify-center shrink-0">
+      <img
+        class="h-60 rounded-full w-60 border-4 border-slate-700 object-cover"
+        src="/images/ivan.jpg"
+        alt="Ivan Martinez"
+      />
+    </div>
   </div>
-  <div class="flex justify-center shrink-0">
-    <img
-      class="h-60 rounded-full w-60 border-4 border-slate-700 object-cover"
-      src="/images/ivan.jpg"
-      alt="Ivan Martinez"
-    />
-  </div>
-</div>
+</YellowBackground>
